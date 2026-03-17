@@ -47,6 +47,8 @@ function createLayers() {
     const div = document.createElement("div");
     div.classList.add("layer");
     div.style.backgroundImage = `url(${layer.id}.png)`;
+div.style.setProperty("--img", `url(${layer.id}.png)`);
+
     div.style.zIndex = layer.z;
     div.dataset.id = layer.id;
     canvas.appendChild(div);
