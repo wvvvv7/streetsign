@@ -61,4 +61,14 @@ body {
   filter: hue-rotate(60deg) saturate(2);
   transform: translateX(4px);
 }
+.layer {
+  --img: none;
+  background-image: var(--img);
+}
+
+.layer.glitch::before,
+.layer.glitch::after {
+  background-image: var(--img);
+}
+
 
